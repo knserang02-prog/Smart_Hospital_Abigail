@@ -14,7 +14,7 @@ with open("style.html", "r", encoding="utf-8") as f:
 st.markdown(style, unsafe_allow_html = True)
 
 @st.cache_resource
-def load_model()
+def load_model():
     with open('hosoital_model.pkl', 'rb') as f:
         return pickle.load(f)
 
