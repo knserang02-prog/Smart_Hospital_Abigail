@@ -195,7 +195,7 @@ if submitted:
     st.markdown(result_template.format(
         bg=info['bg'],
         border = info['border'],
-        icon = ['icon'],
+        icon = info['icon'],
         color = info['color'],
         dept_name = dept_name,
         desc = info['desc'],
