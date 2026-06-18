@@ -200,7 +200,7 @@ if submitted:
         dept_name = dept_name,
         desc = info['desc'],
         steps_html = steps_html,
-        ), unsafe_allow_html=True)
+    ), unsafe_allow_html=True)
         # 2. Load the HTML shell
        
         # 3. Inject the variables and display
