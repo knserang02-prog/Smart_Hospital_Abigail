@@ -118,6 +118,8 @@ with st.form("triage_form"):
 
     with open("history.html", "r", encoding="utf-8") as f:
         history = f.read()
+    st.markdown(history, unsafe_allow_html=True)
+
     c1,c2,c3,_ = st.columns(4)
     with c1:
         hypertension = st.checkbox('Hypertension')
@@ -127,9 +129,13 @@ with st.form("triage_form"):
         asthma = st.checkbox('Asthma')
     st.markdown("<br>", unsafe_allow_html=True)
 
+    with open("patient.html", "r", encoding="utf-8") as f:
+        patient = f.read()
+    st.markdown(patient, unsafe_allow_html=True)
+
     col_age, col_gen = st.columns(2)
     with col_age:
-        age = st.selectbox("Age", min_value=1, max_value=120, value=35)
+        age = st.number_input("Age", min_value=1, max_value=120, value=35)
     with col_gen:
         gender = st.selectbox("Gender", options=['Female', 'Male'])
     st.markdown("<br>", unsafe_allow_html=True)
