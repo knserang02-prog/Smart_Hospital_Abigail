@@ -63,7 +63,7 @@ DEPT_INFO = {
         'next':['Visit Level 2, Wing D','Estimated wait: 15–20 min','Bring photos of affected area if possible']
     },
 }
-with open("header", 'r', encoding='utf-8') as f:
+with open("header.html", 'r', encoding='utf-8') as f:
     header_html = f.read()
 
 st.markdown(header_html, unsafe_allow_html=True)
