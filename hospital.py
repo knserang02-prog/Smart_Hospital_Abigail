@@ -186,9 +186,9 @@ if submitted:
     with res_col:
         steps_html = ''.join(
             f'<div style = "display:flex;align-items:center;gap:8px;margin-bottom:6px;">'
-            f'<span style = "color: {info["color"]};font-size:14px;"></span>')
-            f'<span style = "color:#374151;font-size:14px;">{step}</span></div>')
-            for step in info['next']
+            f'<span style = "color: {info["color"]};font-size:14px;"></span>'
+            f'<span style = "color:#374151;font-size:14px;">{step}</span></div>'
+            for step in info['next'])
         # 1. Build the loop string in Python (too complex for pure HTML)
     with open("result.html", "r", encoding="utf-8") as f:
         result_template = f.read()
